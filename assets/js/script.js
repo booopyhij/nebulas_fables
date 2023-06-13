@@ -3,7 +3,7 @@
 var requestUrl = 'https://syndication.api.eb.com/production/article/1/xml';
 var requestUrl2 = 'https://images-api.nasa.gov/&appid=kSgH3akh7Qaqauv7AbKZyRc6pQjxcfVEOlObfDDl';
 var requestUrl3 = 
-"https://syndication.api.eb.com/production/articles?articleTypeId=31&lastUpdated=2020-10-01";
+"https://syndication.api.eb.com/production/articles?articleTypeId=31&lastUpdated=2022-10-01";
 var requestOptions=  {
     method: 'GET',
     headers: {
