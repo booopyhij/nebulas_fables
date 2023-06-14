@@ -4,8 +4,8 @@ Backpage image
 
 
 .background {
-  background-image: url("assets\images\Nebulas_fables.jpg"); 
-  /* height: 50px; */
+  background-image: url("/Nebulas_Fables/assets/images/Nebulas_fables.jpg"); 
+  height: 50px;
   background-size: cover;
 }
 
