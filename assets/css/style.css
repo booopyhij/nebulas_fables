@@ -7,6 +7,7 @@ Backpage image
   background-image: url("/Nebulas_Fables/assets/images/Nebulas_fables.jpg"); 
   height: 50px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* 
@@ -87,6 +88,22 @@ Directory Button
   margin-left: 30px;
   background-color: rgba(203, 22, 13, 0.75);
   box-shadow: 5px 5px rgba(150, 30, 3, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 150%;
+}
+ 
+  /*
+  Nasa Button
+  */
+
+#NASA {
+  float: left;
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  background-color: rgba(30, 53, 225, 0.75);
+  box-shadow: 5px 5px rgba(173, 7, 7, 0.75);
   font-family: "Press Start 2P", sans-serif;
   font-size: 150%;
 }
