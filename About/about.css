@@ -4,9 +4,11 @@ Backpage image
 
 
 .background {
-    background-image: url("/Nebulas_Fables/assets/images/Nebulas_fables.jpg"); 
+    /*background-image: url("/Nebulas_Fables/assets/images/Nebulas_fables.jpg"); */
+    background-image: url(/assets/images/Nebulas_fables.jpg);
     height: 50px;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   
   /* 
@@ -22,6 +24,16 @@ Backpage image
     animation: glow 1s ease-in-out infinite alternate;
     text-align: center;
     font-family: "Press Start 2P", sans-serif;
+  }
+
+  .header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
   
   @-webkit-keyframes glow {
