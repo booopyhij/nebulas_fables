@@ -1,0 +1,160 @@
+/*
+Background image
+*/
+
+.background {
+   /* background-image: url("/Nebulas_Fables/assets/images/NF.jpeg");*/
+    background-image: url("/Users/ares/Project_1/Nebulas_Fables/assets/images/NF.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 150vh;
+  }
+
+  /* 
+Website Header
+*/
+
+.header {
+  margin-top: 30px;
+  font-size: 80px;
+  color: blueviolet;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-align: center;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/*
+Nav Bar Container
+*/
+
+.NavContainer{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/*
+search bar
+*/
+
+#user-search{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+#user-input{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#searchBtn{
+  width: fit-content;
+
+}
+
+/*
+Nav
+*/
+
+.nav{
+  justify-content: space-between;
+  width:50%;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 20px;
+  height: 75px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+a {
+  width: auto;
+  display: flex;
+}
+
+button {
+  width:100%;
+  display: flex;
+  margin: 0;
+}
+
+/*
+Home button
+*/
+
+#Home {
+  float: left;
+  display: block;
+  background-color: rgba(175, 19, 236, 0.75);
+  box-shadow: 5px 5px rgba(105, 7, 135, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 100%;
+}
+
+/* 
+Directory Button
+*/
+
+#Directory {
+  float: left;
+  display: block;
+  background-color: rgba(203, 22, 13, 0.75);
+  box-shadow: 5px 5px rgba(150, 30, 3, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 100%;
+}
+ 
+  /*
+  Nasa Button
+  */
+
+#NASA {
+  float: left;
+  display: block;
+  background-color: rgba(30, 53, 225, 0.75);
+  box-shadow: 5px 5px rgba(173, 7, 7, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 100%;
+}
+
+/*
+Mythos Button
+*/
+
+#Mythos {
+  float: left;
+  display: block;
+  background-color: rgba(30, 225, 82, 0.75);
+  box-shadow: 5px 5px rgba(29, 157, 12, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 100%;
+}
+
+/* 
+About Button
+*/
+
+#About {
+  float: left;
+  display: block;
+  background-color: rgba(5, 82, 198, 0.75);
+  box-shadow: 5px 5px rgba(10, 3, 150, 0.75);
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 100%;
+}
