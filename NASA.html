@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nebulas Fables</title>
     <link rel="reset-stylesheet" href="./assets/css/reset.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./NASA.css" />
     <link rel="stylesheet" href="./assets/css/nav.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular"/>
@@ -22,7 +23,6 @@
       <h1>Nebulas Fables</h1>
     </header>
 
-    <br />
       <section id="user-search">
         <input id="user-input" type="text" placeholder="Search the Galaxy" />
         <button id="searchBtn">Search</button>
@@ -32,7 +32,7 @@
 
     <section class="NavContainer">
       
-      <nav class="nav"> 
+      <nav class="nav"> 3
         <a href="index.html"><button type="button" id="Home">Home</button></a>
         <a href="directory.html"><button type="button" id="Directory">Directory</button></a>
         <a href="NASA.html"><button type="button" id="NASA">NASA</button></a>
@@ -40,6 +40,48 @@
         <a href="about.html"><button type="button" id="About">About</button></a>
       </nav>
     </section>
+    
+    feature/belicia
+    <br />
+
+    <section>
+      <nav class="nav">
+        <search id="searchbar">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+          </form>
+        </search>
+        <a href="index.html"><button type="button" id="Home">Home</button></a>
+        <a href="directory.html"><button type="button" id="Directory">Directory</button></a>
+        <a href="NASA.html"><button type="button" id="NASA">NASA</button></a>
+        <!-- Button trigger modal -->
+        <button type="button" id="Mythos" class="btn" data-bs-toggle="modal" data-bs-target="#mythosModal">Mythos</button>
+
+        <a href="about.html"><button type="button" id="About">About</button></a>
+      </nav>
+      <!-- mythos Modal -->
+      <div class="modal fade" id="mythosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Mythos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Coming soon!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <main>
+      <br />
+main
 
     <script src="./assets/js/britannica.js"></script>
     <script src="./assets/js/nasa.js"></script>
@@ -54,11 +96,12 @@
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" 
+    crossorigin="anonymous"></script>
   </body>
 </html>
 
