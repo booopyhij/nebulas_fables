@@ -1,2 +1,74 @@
 
+.main{
+   color: aqua;
+}
 
+.card {
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   border: none;
+}
+
+#Space {
+   display: block;
+   background-color: rgba(49, 83, 218, 0.2);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   border-radius: 10px;
+   transition: 0.3s;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
+   width: 40%;
+}
+
+#Myth {
+   display: block;
+   background-color: rgba(10, 4, 119, 0.2);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   border-radius: 10px;
+   transition: 0.3s;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
+   width: 40%;
+}
+
+#Direct {
+   display: block;
+   background-color: rgba(88, 4, 162, 0.2);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   border-radius: 10px;
+   transition: 0.3s;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
+   width: 40%;
+}
+
+#Ab {
+   display: block;
+   background-color: rgba(118, 19, 193, 0.2);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   border-radius: 10px;
+   transition: 0.3s;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
+   width: 40%;
+}
+
+#HI {
+   display: block;
+   background-color: rgba(65, 153, 248, 0.2);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   border-radius: 10px;
+   transition: 0.3s;
+   padding: 50px;
+   margin: 20px;
+   font-size: 20px;
+}
+
+ .card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }

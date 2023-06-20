@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/nav.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular"/>
   </head>
 
@@ -31,13 +31,32 @@
       <div id="img-card"></div>
 
       <nav class="nav"> 
-        <a href="index.html"><button type="button" id="Home">Home</button></a>
-        <a href="directory.html" ><button type="button" id="Directory">Directory</button></a>
+        <a href="index.html"><button type="button" class="main" id="Home" >Home</button></a>
+        <!--Directory Button trigger modal-->
+        <button type="button" id="Directory" data-bs-toggle="modal" data-bs-target="#directoryModal">Directory</button>
         <a href="NASA.html"><button type="button" id="NASA">NASA</button></a>
         <!-- Button trigger modal -->
         <button type="button" id="Mythos" data-bs-toggle="modal" data-bs-target="#mythosModal">Mythos</button>
         <a href="about.html"><button type="button" id="About">About</button></a>
       </nav>
+
+      <!--Directory Modal-->
+      <div class="modal fade" id="directoryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Directory</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Coming soon!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- mythos Modal -->
       <div class="modal fade" id="mythosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,7 +75,27 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="card">
+      <div id="HI">
+        <p>The world seemed to slow down and all Anakin could see was Obi-Wan's face. Did Anakin regret what he had done? No, not really. But did he regret hurting Obi-Wan? Yes, more than anything else. That really wasn't saying much, he doesn't ever regret anything, but hurting Obi-Wan, that was something to regret. Obi-Wan was gasping for breath, clutching the side that had the light saber wound, and hobbling over towards his light saber at the edge of the platform.
+          "Master don't try it, don't make me have to kill you." Anakin is begging him at this point. He loves Obi-Wan more than anyone else in the galaxy, the universe. Obi-Wan audibly scoffs at him, grabbing his light saber and trying to straighten out as much as possible.
+          "Look what you have done, Anakin! You were supposed to destroy the Sith not join them! Bring balance to the force not leave it in darkness!" This time it's Anakin who scoffs.
+          "Obi-Wan you're mistaken. I haven't joined the Sith, I AM the Sith! I always have been!" Obi-Wan blanks, Anakin swears he sees his eyes roll into the back of his head, before he hits the ground, body lax. Good, Anakin thinks, now that he's unconscious I won't have to kill him."</p>
+      </div>
+      <div id="Space">
+        <p>NASA</p>
+      </div>
+      <div id="Myth">
+        <p>Mythos</p>
+      </div>
+      <div id="Direct">
+        <p>Directory</p>
+      </div>
+      <div id="Ab">
+        <p>About</p>
+      </div>
     </section>
 
     <script
