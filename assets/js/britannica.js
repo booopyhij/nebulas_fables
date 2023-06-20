@@ -1,3 +1,4 @@
+//is this needed?
 // $(document).ready(function () {
 // $("#searchBtn").on("click", function (event) {
 //     event.preventDefault();
@@ -15,14 +16,31 @@ function britannicaSearch(searchInput){
     fetch(requestUrl2, requestOptions)
     .then(function(response){
         console.log(response);
+     fetch(requestUrl3, requestOptions)
+        .then(function (response){
+            console.log(response);
+            return response.text();
+        })
+         .then (function (data){
+             console.log('Fetch Response \n-------------');
+             console.log(data);
+             return data.innerText;
+         }).then(function (articleResponses) { 
+        
         $('#articleSearch').empty();
+        // fix the for loop
+        var articleResponses = data.articles[i].title[i];
         for (let i=0; i < articleResponses.length; i++){
-        var articleResponses = response.articles[i].title[i];    
-        console.log(articleResponses);}
+            //figure out why this isn't reading the object
+        console.log(articleResponses);
+        return data.innerText;}
+        // if statement needed?   
         var userArticle = $('<p>' + articleResponses + '</p>');
-     
-       $("#articleSearch").append(userArticle);
-    })})};
+        console.log(userArticle);
+        // submit listener here
+        // make sure the appending works properly
+       divEl.append(userArticle);
+})})})};
     
     var divEl = document.getElementById('articleSearch');
     
@@ -39,22 +57,24 @@ function britannicaSearch(searchInput){
     fetch(requestUrl3, requestOptions)
     .then(function (response){
         console.log(response);
-        
+        return response.text();
     })
      .then (function (data){
          console.log('Fetch Response \n-------------');
          console.log(data);
+         return data.innerText;
      });
 
     fetch(requestUrl, requestOptions)
      .then(function(response){
         console.log(response);
-        
+        return response.text();
      })
      .then (function (data){
         console.log('Fetch Response \n-------------');
         console.log(data);
-     })
+        return data.innerText;
+     });
      //.then(response => divEl.innerHTML = response);
 
      britannicaSearch();
