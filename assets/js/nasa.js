@@ -29,12 +29,12 @@ function search(userInput) {
     method: "GET",
   }).then(function (searchResponse) {
     console.log(searchResponse);
-    $("#img-card").empty();
+    $("#nasa-card").empty();
     var imageReturn = searchResponse.collection.items[0].links[0].href;
     console.log(imageReturn);
 
     var userImage = $('<img src="' + imageReturn + '" />');
 
-    $("#img-card").append(userImage);
+    $("#nasa-card").append(userImage);
   });
 }
