@@ -3,9 +3,10 @@ Background image
 */
 
 .background {
-    background-repeat: repeat;
-    background-size: cover;
-    height: 150vh;
+  background-image: url(/Nebulas_Fables/assets/images/NF.jpeg);
+  background-repeat: repeat;
+  background-size: cover;
+  height: 150vh;
   }
 
   /* 
@@ -98,7 +99,8 @@ Home button
 
 #Home {
   float: left;
-  display: block;
+  display: flex;
+  width: fit-content;
   background-color: rgba(175, 19, 236, 0.75);
   box-shadow: 5px 5px rgba(105, 7, 135, 0.75);
   font-family: "Press Start 2P", sans-serif;
@@ -111,7 +113,8 @@ Directory Button
 
 #Directory {
   float: left;
-  display: block;
+  display: flex;
+  width: fit-content;
   background-color: rgba(203, 22, 13, 0.75);
   box-shadow: 5px 5px rgba(150, 30, 3, 0.75);
   font-family: "Press Start 2P", sans-serif;
@@ -124,7 +127,8 @@ Directory Button
 
 #NASA {
   float: left;
-  display: block;
+  display: flex;
+  width: fit-content;
   background-color: rgba(30, 53, 225, 0.75);
   box-shadow: 5px 5px rgba(173, 7, 7, 0.75);
   font-family: "Press Start 2P", sans-serif;
@@ -137,7 +141,8 @@ Mythos Button
 
 #Mythos {
   float: left;
-  display: block;
+  display: flex;
+  width: fit-content;
   background-color: rgba(30, 225, 82, 0.75);
   box-shadow: 5px 5px rgba(29, 157, 12, 0.75);
   font-family: "Press Start 2P", sans-serif;
@@ -150,7 +155,8 @@ About Button
 
 #About {
   float: left;
-  display: block;
+  display: flex;
+  width: fit-content;
   background-color: rgba(5, 82, 198, 0.75);
   box-shadow: 5px 5px rgba(10, 3, 150, 0.75);
   font-family: "Press Start 2P", sans-serif;
