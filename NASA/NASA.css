@@ -1,0 +1,16 @@
+.main{
+    color: aqua;
+ }
+ 
+ .NA-sa {
+    display: block;
+    background-color: rgba(65, 153, 248, 0.2);
+    box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 50px;
+    margin: 20px;
+    font-size: 20px;
+ }
+ 
+ 
