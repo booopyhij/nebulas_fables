@@ -1,3 +1,8 @@
+//var to store user input
+var userInput;
+// var for search history array
+var searchHistory = [];
+
 //function to take in user input from search bar and makes a variable to store it
 $("#searchBtn").on("click", function (event) {
   event.preventDefault();
@@ -5,6 +10,24 @@ $("#searchBtn").on("click", function (event) {
   var userInput = $("#user-input").val().trim();
   console.log(userInput);
 
+  search(userInput);
+  //if statement to create search history list
+  if (!searchHistory.includes(userInput)) {
+    searchHistory.push(userInput);
+    var prevSearch = $(
+      '<li><button type="button">' + userInput + "</button></li>"
+    );
+    $("#search-history").append(prevSearch);
+    console.log(prevSearch);
+  }
+  //local storage to set user-input
+  localStorage.setItem("user-input", JSON.stringify(searchHistory));
+
+  var searchHistoryList = JSON.parse(localStorage.getItem("user-input"));
+  if (searchHistoryList !== null) {
+    var searchArr = searchHistoryList.length - 1;
+    var prevSearchList = searchArr[prevSearchList];
+  }
   search(userInput);
 });
 
@@ -14,27 +37,42 @@ $("#user-input").keyup(function (event) {
   if (event.key === "Enter") {
     console.log(userInput);
     search(userInput);
+    if (!searchHistory.includes(userInput)) {
+      console.log(searchHistory);
+      searchHistory.push(userInput);
+      var prevSearch = $(
+        '<li><button type="button" id="button">' + userInput + "</button></li>"
+      );
+      $("#search-history").append(prevSearch);
+    }
+    localStorage.setItem("user-input", JSON.stringify(searchHistory));
+
+    search(userInput);
   }
 });
 
 //function to search nasa api
 function search(userInput) {
   //var to auto add constellation to end of user search input
-  var constellation = "%20constellation";
+  //var constellation = "%20constellation";
   // var nasaApiKey = "kSgH3akh7Qaqauv7AbKZyRc6pQjxcfVEOlObfDDl"; i dont think we need api key but will keep in just incase we do need it later
-  var nasaImageUrl =
-    "https://images-api.nasa.gov/search?q=" + userInput + constellation;
+  var nasaImageUrl = "https://images-api.nasa.gov/search?q=" + userInput;
   $.ajax({
     url: nasaImageUrl,
     method: "GET",
   }).then(function (searchResponse) {
     console.log(searchResponse);
-    $("#img-card").empty();
+    $("#nasa-card").empty();
     var imageReturn = searchResponse.collection.items[0].links[0].href;
     console.log(imageReturn);
 
     var userImage = $('<img src="' + imageReturn + '" />');
 
-    $("#img-card").append(userImage);
+    $("#nasa-card").append(userImage);
   });
 }
+
+$(document).on("click", "#button", function () {
+  var histList = $(this).text();
+  search(histList);
+});
