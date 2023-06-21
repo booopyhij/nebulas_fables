@@ -24,7 +24,7 @@ fetch(url)
         // console.log(sel);
         // var redo = newPEl + sel;
         // console.log(redo);
-        // // var userArticle = $('<p>' + JSON.stringify(articleResponses) + '</p>');
+        // var userArticle = $('<p>' + JSON.stringify(articleResponses) + '</p>');
         // console.log(userArticle);
         divEl.append(pEl);
     });   
