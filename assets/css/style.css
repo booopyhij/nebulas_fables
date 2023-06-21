@@ -10,6 +10,11 @@
    border: none;
 }
 
+ul#search-history {
+   display: flex;
+   list-style: none;
+}
+
 #Space {
    display: block;
    background-color: rgba(49, 83, 218, 0.2);
