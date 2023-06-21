@@ -16,7 +16,17 @@ fetch(url)
         var articleResponses = data.query.search[0].snippet;
         console.log(articleResponses);
         var pEl = document.createElement('p');
-        pEl.textContent = articleResponses;
+        pEl.textContent = JSON.stringify(articleResponses).replace('<span class=\"searchmatch\">', '');
+
+        class CustomReplacer {
+            constructor(value) {
+                pEl.value =value
+            }
+            [Symbol.replace](string) {
+                return string.replace('<span class="searchmatch">', '');
+            }
+        }
+        console.log(pEl.toString().replace(new CustomReplacer()));
         //pEl.innerText = JSON.stringify(data.query.search[0].snippet);
          //var newPEl = pEl.toString().replace(/<span class=\"searchmatch">/g, '');
         // newPEl.textContent = pEl;
