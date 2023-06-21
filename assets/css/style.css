@@ -3,11 +3,15 @@
    color: aqua;
 }
 
-.card {
-   flex-direction: row;
+.smile {
+   display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-evenly;
+   align-items: center;
    border: none;
+   font-family: "Press Start 2P", sans-serif;
+   color: aqua;
+   width: fit-content;
 }
 
 ul#search-history {
@@ -15,58 +19,53 @@ ul#search-history {
    list-style: none;
 }
 
+li{
+   list-style-type: none;
+}
+
 #Space {
-   display: block;
-   background-color: rgba(49, 83, 218, 0.2);
-   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   display: flex;
+   background-color: rgba(49, 83, 218, 0.5);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.5);
    border-radius: 10px;
    transition: 0.3s;
    padding: 50px;
    margin: 20px;
    font-size: 20px;
-   width: 40%;
+   width: fit-content;
+}
+
+#search-history {
+   display: flex;
+   flex-direction: column;
 }
 
 #Myth {
    display: block;
-   background-color: rgba(10, 4, 119, 0.2);
-   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   background-color: rgba(10, 4, 119, 0.5);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.5);
    border-radius: 10px;
    transition: 0.3s;
    padding: 50px;
    margin: 20px;
    font-size: 20px;
-   width: 40%;
 }
 
 #Direct {
    display: block;
-   background-color: rgba(88, 4, 162, 0.2);
-   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   background-color: rgba(88, 4, 162, 0.5);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.5);
    border-radius: 10px;
    transition: 0.3s;
    padding: 50px;
    margin: 20px;
    font-size: 20px;
-   width: 40%;
-}
-
-#Ab {
-   display: block;
-   background-color: rgba(118, 19, 193, 0.2);
-   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
-   border-radius: 10px;
-   transition: 0.3s;
-   padding: 50px;
-   margin: 20px;
-   font-size: 20px;
-   width: 40%;
 }
 
 #HI {
    display: block;
-   background-color: rgba(65, 153, 248, 0.2);
-   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.2);
+   background-color: rgba(65, 153, 248, 0.5);
+   box-shadow: 5px 5px 8px 8px rgba(1, 0, 0, 0.5);
    border-radius: 10px;
    transition: 0.3s;
    padding: 50px;

@@ -12,5 +12,12 @@
     margin: 20px;
     font-size: 20px;
  }
+
+ p {
+   display: flex;
+   margin: 10%;
+   color: aqua;
+   font-family: "Press Start 2P", sans-serif;
+ }
  
  
